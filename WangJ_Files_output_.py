@@ -27,7 +27,7 @@ def read_mileage_file():
         with open(filename, "r") as f:
             lines = f.readlines()
         # print(lines)#['03/07/2025\t175.3\t9.718\t$40.70\n', '03/08/2025\t157.1\t7.766\t$17.34\n', ...]
-        print("Date      Trip  Gallons Cost  $/G  Mileage")
+        print("Date       Trip  Gallons Cost  $/G  Mileage")
         print("=============================================")
         for line in lines:
             fields = line.strip().split("\t")

@@ -48,9 +48,9 @@ def write_mileage_to_file(data, filename):
     try:
         with open(filename, "w") as f:
             for row in data:
-                f.write(f"{row.get('date')}\t\t")
-                f.write(f"{row.get('trip')}\t\t")
-                f.write(f"{row.get('gallons')}\t\t")
+                f.write(f"{row.get('date')}\t")
+                f.write(f"{row.get('trip')}\t")
+                f.write(f"{row.get('gallons')}\t")
                 f.write(f"{row.get('cost')}\n")
     except Exception as e:
         print(f"Error: {e}")
