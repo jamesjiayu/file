@@ -3,7 +3,7 @@
 # Date: 04/11/2025
 
 import pytest
-from calculator import add, subtract, multiply, divide
+from calculator import add, subtract, multiply, divide, power
 
 
 def test_add():
@@ -33,6 +33,12 @@ def test_divide():
     assert divide(-1, -1) == 1.0
     assert divide(-1, 1) == -1.0
     assert divide(1, 0) is None
+
+
+def test_power():
+    assert power(1, 2) == 1.0
+    assert power(2, 2) == 4.0
+    assert power(-2, 3) == -8.0
 
 
 """
